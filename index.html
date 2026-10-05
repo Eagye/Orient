@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Orient Trust Consult | Auditing, Tax, Accounting</title>
+  <meta name="description" content="Professional auditing, accounting, tax advisory, and compliance services for growth-focused organizations.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home">Orient Trust Consult</a>
+      <button class="menu-btn" aria-label="Toggle navigation" id="menuBtn">Menu</button>
+      <nav id="mainNav">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#resources">Resources</a>
+        <a class="btn btn-sm" href="#consultation">Request Consultation</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="home">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Trusted Financial Advisory Partner</p>
+          <h1>Audit, Tax, and Accounting Services Built on Accuracy and Trust</h1>
+          <p class="lead">
+            We help organizations stay compliant, reduce financial risk, and make strategic decisions with confidence.
+          </p>
+          <div class="hero-actions">
+            <a class="btn" href="#consultation">Book a Consultation</a>
+            <a class="btn btn-outline" href="#services">Explore Services</a>
+          </div>
+        </div>
+        <aside class="hero-card">
+          <h2>Why Clients Choose Us</h2>
+          <ul>
+            <li>Specialists in audit, tax, and compliance</li>
+            <li>Industry-informed financial strategy</li>
+            <li>Clear communication and practical recommendations</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+
+    <section class="section" id="services">
+      <div class="container">
+        <h2>Core Services</h2>
+        <p class="section-intro">Practical solutions tailored to your organization size, sector, and regulatory environment.</p>
+        <div class="card-grid">
+          <article class="card">
+            <h3>Auditing</h3>
+            <p>Internal, external, and forensic audits to strengthen controls, transparency, and accountability.</p>
+          </article>
+          <article class="card">
+            <h3>Tax Advisory</h3>
+            <p>Strategic tax planning and optimization designed to protect value and improve decision-making.</p>
+          </article>
+          <article class="card">
+            <h3>Tax Compliance</h3>
+            <p>Accurate filing, reporting, and adherence support to keep your organization fully compliant.</p>
+          </article>
+          <article class="card">
+            <h3>General Accounting</h3>
+            <p>Bookkeeping, payroll support, and financial statements delivered with precision and timeliness.</p>
+          </article>
+          <article class="card">
+            <h3>Management Consultancy</h3>
+            <p>Business restructuring, risk reviews, and financial strategy support for growth and resilience.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section muted" id="about">
+      <div class="container split">
+        <div>
+          <h2>About Orient Trust Consult</h2>
+          <p>
+            We are a professional services firm focused on dependable financial insight, measurable outcomes, and ethical advisory delivery.
+          </p>
+          <p>
+            Our team combines technical expertise with business context so clients receive recommendations they can act on immediately.
+          </p>
+        </div>
+        <div class="pillars">
+          <div class="pillar">
+            <h3>Integrity</h3>
+            <p>Every engagement is guided by transparency and professional standards.</p>
+          </div>
+          <div class="pillar">
+            <h3>Precision</h3>
+            <p>We prioritize detail, compliance, and evidence-based analysis.</p>
+          </div>
+          <div class="pillar">
+            <h3>Partnership</h3>
+            <p>We work as an extension of your team, not just an external vendor.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="resources">
+      <div class="container">
+        <h2>Resources & Insights</h2>
+        <p class="section-intro">Thought leadership content that helps clients stay informed and make better financial decisions.</p>
+        <div class="card-grid three">
+          <article class="card">
+            <h3>Tax Filing Readiness Checklist</h3>
+            <p>Prepare key records, avoid penalties, and improve reporting accuracy before filing deadlines.</p>
+          </article>
+          <article class="card">
+            <h3>Audit Preparation for SMEs</h3>
+            <p>Essential controls and documentation practices that simplify your next audit cycle.</p>
+          </article>
+          <article class="card">
+            <h3>Managing Financial Risk in Growth Phases</h3>
+            <p>How to align governance and forecasting with expansion goals.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section cta-section" id="consultation">
+      <div class="container form-wrap">
+        <div>
+          <h2>Request a Consultation</h2>
+          <p>Tell us about your needs and our team will contact you with a suitable next step.</p>
+        </div>
+        <form id="consultationForm" novalidate>
+          <div class="field-grid">
+            <label>
+              Full Name
+              <input type="text" name="fullName" required>
+            </label>
+            <label>
+              Email Address
+              <input type="email" name="email" required>
+            </label>
+            <label>
+              Phone Number
+              <input type="tel" name="phone" required>
+            </label>
+            <label>
+              Company Name
+              <input type="text" name="company" required>
+            </label>
+            <label class="full">
+              Service Needed
+              <select name="service" required>
+                <option value="">Select a service</option>
+                <option>Auditing</option>
+                <option>Tax Advisory</option>
+                <option>Tax Compliance</option>
+                <option>General Accounting</option>
+                <option>Management Consultancy</option>
+              </select>
+            </label>
+            <label class="full">
+              Project Details
+              <textarea name="message" rows="4" required placeholder="Briefly describe your challenge or objective."></textarea>
+            </label>
+          </div>
+          <button type="submit" class="btn">Submit Request</button>
+          <p id="formStatus" class="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Orient Trust Consult. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
